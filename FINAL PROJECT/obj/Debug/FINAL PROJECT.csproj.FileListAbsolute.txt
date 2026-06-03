@@ -1,0 +1,45 @@
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\FINAL PROJECT.exe.config
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\FINAL PROJECT.exe
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\FINAL PROJECT.pdb
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\Google.Protobuf.dll
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\MySql.Data.dll
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\System.Buffers.dll
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\System.IO.Pipelines.dll
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\System.Memory.dll
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\ZstdSharp.dll
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\Google.Protobuf.pdb
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\Google.Protobuf.xml
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\MySql.Data.xml
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\System.Buffers.xml
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\System.IO.Pipelines.xml
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\System.Memory.xml
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\obj\Debug\FINAL PROJECT.csproj.AssemblyReference.cache
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\obj\Debug\FINAL_PROJECT.FORMS.FormApplicantDashboard.resources
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\obj\Debug\FINAL_PROJECT.FORMS.Form1.resources
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\obj\Debug\FINAL_PROJECT.FORMS.FormApplicantRegister.resources
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\obj\Debug\FINAL_PROJECT.FORMS.FormApplicanDocuments.resources
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\obj\Debug\FINAL_PROJECT.FORMS.FormHRDashboard.resources
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\obj\Debug\FINAL_PROJECT.Properties.Resources.resources
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\obj\Debug\FINAL PROJECT.csproj.GenerateResource.cache
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\obj\Debug\FINAL PROJECT.csproj.CoreCompileInputs.cache
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\obj\Debug\FINAL PR.67DEF6EB.Up2Date
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\obj\Debug\FINAL PROJECT.exe
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\obj\Debug\FINAL PROJECT.pdb

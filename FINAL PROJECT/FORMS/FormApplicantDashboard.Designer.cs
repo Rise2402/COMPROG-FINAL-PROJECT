@@ -87,6 +87,7 @@
             this.button5.TabIndex = 5;
             this.button5.Text = "MY DOCUMENTS";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -127,6 +128,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "MY PROFILE";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 

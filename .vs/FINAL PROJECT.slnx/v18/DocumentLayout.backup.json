@@ -1,7 +1,50 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\chris\\source\\repos\\COMPROG-FINAL-PROJECT\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5139363A-4741-49F2-9BDF-F1072CD5F3AA}|FINAL PROJECT\\FINAL PROJECT.csproj|c:\\users\\chris\\source\\repos\\comprog-final-project\\final project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5139363A-4741-49F2-9BDF-F1072CD5F3AA}|FINAL PROJECT\\FINAL PROJECT.csproj|solutionrelative:final project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5139363A-4741-49F2-9BDF-F1072CD5F3AA}|FINAL PROJECT\\FINAL PROJECT.csproj|C:\\Users\\chris\\source\\repos\\COMPROG-FINAL-PROJECT\\final project\\forms\\formapplicantdocuments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5139363A-4741-49F2-9BDF-F1072CD5F3AA}|FINAL PROJECT\\FINAL PROJECT.csproj|solutionrelative:final project\\forms\\formapplicantdocuments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5139363A-4741-49F2-9BDF-F1072CD5F3AA}|FINAL PROJECT\\FINAL PROJECT.csproj|C:\\Users\\chris\\source\\repos\\COMPROG-FINAL-PROJECT\\final project\\forms\\formapplicantdocuments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5139363A-4741-49F2-9BDF-F1072CD5F3AA}|FINAL PROJECT\\FINAL PROJECT.csproj|solutionrelative:final project\\forms\\formapplicantdocuments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5139363A-4741-49F2-9BDF-F1072CD5F3AA}|FINAL PROJECT\\FINAL PROJECT.csproj|C:\\Users\\chris\\source\\repos\\COMPROG-FINAL-PROJECT\\final project\\forms\\formapplicantlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5139363A-4741-49F2-9BDF-F1072CD5F3AA}|FINAL PROJECT\\FINAL PROJECT.csproj|solutionrelative:final project\\forms\\formapplicantlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5139363A-4741-49F2-9BDF-F1072CD5F3AA}|FINAL PROJECT\\FINAL PROJECT.csproj|c:\\users\\chris\\source\\repos\\comprog-final-project\\final project\\forms\\formapplicantdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5139363A-4741-49F2-9BDF-F1072CD5F3AA}|FINAL PROJECT\\FINAL PROJECT.csproj|solutionrelative:final project\\forms\\formapplicantdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|FINAL PROJECT||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5139363A-4741-49F2-9BDF-F1072CD5F3AA}|FINAL PROJECT\\FINAL PROJECT.csproj|C:\\Users\\chris\\source\\repos\\COMPROG-FINAL-PROJECT\\final project\\forms\\formapplicantdocuments.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5139363A-4741-49F2-9BDF-F1072CD5F3AA}|FINAL PROJECT\\FINAL PROJECT.csproj|solutionrelative:final project\\forms\\formapplicantdocuments.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5139363A-4741-49F2-9BDF-F1072CD5F3AA}|FINAL PROJECT\\FINAL PROJECT.csproj|C:\\Users\\chris\\source\\repos\\COMPROG-FINAL-PROJECT\\final project\\forms\\formapplicantdocuments.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{5139363A-4741-49F2-9BDF-F1072CD5F3AA}|FINAL PROJECT\\FINAL PROJECT.csproj|solutionrelative:final project\\forms\\formapplicantdocuments.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5139363A-4741-49F2-9BDF-F1072CD5F3AA}|FINAL PROJECT\\FINAL PROJECT.csproj|C:\\Users\\chris\\source\\repos\\COMPROG-FINAL-PROJECT\\final project\\forms\\formapplicantlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5139363A-4741-49F2-9BDF-F1072CD5F3AA}|FINAL PROJECT\\FINAL PROJECT.csproj|solutionrelative:final project\\forms\\formapplicantlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5139363A-4741-49F2-9BDF-F1072CD5F3AA}|FINAL PROJECT\\FINAL PROJECT.csproj|C:\\Users\\chris\\source\\repos\\COMPROG-FINAL-PROJECT\\final project\\database\\schema.sql||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{5139363A-4741-49F2-9BDF-F1072CD5F3AA}|FINAL PROJECT\\FINAL PROJECT.csproj|solutionrelative:final project\\database\\schema.sql||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5139363A-4741-49F2-9BDF-F1072CD5F3AA}|FINAL PROJECT\\FINAL PROJECT.csproj|c:\\users\\chris\\source\\repos\\comprog-final-project\\final project\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +52,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\COMPROG-FINAL-PROJECT\\FINAL PROJECT\\Program.cs",
+              "RelativeDocumentMoniker": "FINAL PROJECT\\Program.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\COMPROG-FINAL-PROJECT\\FINAL PROJECT\\Program.cs*",
+              "RelativeToolTip": "FINAL PROJECT\\Program.cs*",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T15:58:34.045Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -24,8 +80,119 @@
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormApplicantDashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\COMPROG-FINAL-PROJECT\\FINAL PROJECT\\FORMS\\FormApplicantDashboard.cs",
+              "RelativeDocumentMoniker": "FINAL PROJECT\\FORMS\\FormApplicantDashboard.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\COMPROG-FINAL-PROJECT\\FINAL PROJECT\\FORMS\\FormApplicantDashboard.cs [Design]",
+              "RelativeToolTip": "FINAL PROJECT\\FORMS\\FormApplicantDashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T15:55:28.792Z",
+              "EditorCaption": " [Design]"
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormApplicantDocuments.resx",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\COMPROG-FINAL-PROJECT\\FINAL PROJECT\\FORMS\\FormApplicantDocuments.resx",
+              "RelativeDocumentMoniker": "FINAL PROJECT\\FORMS\\FormApplicantDocuments.resx",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\COMPROG-FINAL-PROJECT\\FINAL PROJECT\\FORMS\\FormApplicantDocuments.resx*",
+              "RelativeToolTip": "FINAL PROJECT\\FORMS\\FormApplicantDocuments.resx*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-06-03T15:43:09.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FINAL PROJECT",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\COMPROG-FINAL-PROJECT\\FINAL PROJECT\\FINAL PROJECT.csproj",
+              "RelativeDocumentMoniker": "FINAL PROJECT\\FINAL PROJECT.csproj",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\COMPROG-FINAL-PROJECT\\FINAL PROJECT\\FINAL PROJECT.csproj",
+              "RelativeToolTip": "FINAL PROJECT\\FINAL PROJECT.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-06-03T15:36:42.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormApplicantDocuments.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\COMPROG-FINAL-PROJECT\\FINAL PROJECT\\FORMS\\FormApplicantDocuments.cs",
+              "RelativeDocumentMoniker": "FINAL PROJECT\\FORMS\\FormApplicantDocuments.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\COMPROG-FINAL-PROJECT\\FINAL PROJECT\\FORMS\\FormApplicantDocuments.cs [Design]*",
+              "RelativeToolTip": "FINAL PROJECT\\FORMS\\FormApplicantDocuments.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T03:31:52.1Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormApplicantLogin.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\COMPROG-FINAL-PROJECT\\FINAL PROJECT\\FORMS\\FormApplicantLogin.cs",
+              "RelativeDocumentMoniker": "FINAL PROJECT\\FORMS\\FormApplicantLogin.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\COMPROG-FINAL-PROJECT\\FINAL PROJECT\\FORMS\\FormApplicantLogin.cs",
+              "RelativeToolTip": "FINAL PROJECT\\FORMS\\FormApplicantLogin.cs",
+              "ViewState": "AgIAAIkAAAAAAAAAAAD4v5kAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T03:31:52.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormApplicantLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\COMPROG-FINAL-PROJECT\\FINAL PROJECT\\FORMS\\FormApplicantLogin.cs",
+              "RelativeDocumentMoniker": "FINAL PROJECT\\FORMS\\FormApplicantLogin.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\COMPROG-FINAL-PROJECT\\FINAL PROJECT\\FORMS\\FormApplicantLogin.cs [Design]",
+              "RelativeToolTip": "FINAL PROJECT\\FORMS\\FormApplicantLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T03:31:52.153Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormApplicantDocuments.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\COMPROG-FINAL-PROJECT\\FINAL PROJECT\\FORMS\\FormApplicantDocuments.Designer.cs",
+              "RelativeDocumentMoniker": "FINAL PROJECT\\FORMS\\FormApplicantDocuments.Designer.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\COMPROG-FINAL-PROJECT\\FINAL PROJECT\\FORMS\\FormApplicantDocuments.Designer.cs*",
+              "RelativeToolTip": "FINAL PROJECT\\FORMS\\FormApplicantDocuments.Designer.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T03:31:52.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormApplicantDocuments.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\COMPROG-FINAL-PROJECT\\FINAL PROJECT\\FORMS\\FormApplicantDocuments.cs",
+              "RelativeDocumentMoniker": "FINAL PROJECT\\FORMS\\FormApplicantDocuments.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\COMPROG-FINAL-PROJECT\\FINAL PROJECT\\FORMS\\FormApplicantDocuments.cs*",
+              "RelativeToolTip": "FINAL PROJECT\\FORMS\\FormApplicantDocuments.cs*",
+              "ViewState": "AgIAADcAAAAAAAAAAAAmwEIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T03:31:52.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "schema.sql",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\COMPROG-FINAL-PROJECT\\FINAL PROJECT\\DATABASE\\schema.sql",
+              "RelativeDocumentMoniker": "FINAL PROJECT\\DATABASE\\schema.sql",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\COMPROG-FINAL-PROJECT\\FINAL PROJECT\\DATABASE\\schema.sql",
+              "RelativeToolTip": "FINAL PROJECT\\DATABASE\\schema.sql",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000853|",
+              "WhenOpened": "2026-06-03T03:31:52.166Z"
             }
           ]
         }

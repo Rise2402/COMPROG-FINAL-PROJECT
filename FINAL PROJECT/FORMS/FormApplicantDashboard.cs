@@ -203,7 +203,6 @@ namespace FINAL_PROJECT.FORMS
             LoadCurrentStatus(applicantID);
             LoadMissingDocuments(applicantID);
             LoadInterviewStatus(applicantID);
-
             LoadRecentUpdates(applicantID);
         }
 
@@ -222,12 +221,70 @@ namespace FINAL_PROJECT.FORMS
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FormApplicantStatusTracking frm = new FormApplicantStatusTracking();
+            frm.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form1 frm = new Form1(); // Login Form
+            frm.Show();
+            this.Close();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
         private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblInterviewStatus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblMissingDocs_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

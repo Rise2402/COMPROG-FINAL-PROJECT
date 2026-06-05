@@ -1,0 +1,16 @@
+C:\Users\PMTic\source\repos\WinForms\WinForms\bin\Debug\net10.0-windows\WinForms.exe
+C:\Users\PMTic\source\repos\WinForms\WinForms\bin\Debug\net10.0-windows\WinForms.deps.json
+C:\Users\PMTic\source\repos\WinForms\WinForms\bin\Debug\net10.0-windows\WinForms.runtimeconfig.json
+C:\Users\PMTic\source\repos\WinForms\WinForms\bin\Debug\net10.0-windows\WinForms.dll
+C:\Users\PMTic\source\repos\WinForms\WinForms\bin\Debug\net10.0-windows\WinForms.pdb
+C:\Users\PMTic\source\repos\WinForms\WinForms\obj\Debug\net10.0-windows\WinForms.FormApplicantStatusTracking.resources
+C:\Users\PMTic\source\repos\WinForms\WinForms\obj\Debug\net10.0-windows\WinForms.csproj.GenerateResource.cache
+C:\Users\PMTic\source\repos\WinForms\WinForms\obj\Debug\net10.0-windows\WinForms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PMTic\source\repos\WinForms\WinForms\obj\Debug\net10.0-windows\WinForms.AssemblyInfoInputs.cache
+C:\Users\PMTic\source\repos\WinForms\WinForms\obj\Debug\net10.0-windows\WinForms.AssemblyInfo.cs
+C:\Users\PMTic\source\repos\WinForms\WinForms\obj\Debug\net10.0-windows\WinForms.csproj.CoreCompileInputs.cache
+C:\Users\PMTic\source\repos\WinForms\WinForms\obj\Debug\net10.0-windows\WinForms.dll
+C:\Users\PMTic\source\repos\WinForms\WinForms\obj\Debug\net10.0-windows\refint\WinForms.dll
+C:\Users\PMTic\source\repos\WinForms\WinForms\obj\Debug\net10.0-windows\WinForms.pdb
+C:\Users\PMTic\source\repos\WinForms\WinForms\obj\Debug\net10.0-windows\WinForms.genruntimeconfig.cache
+C:\Users\PMTic\source\repos\WinForms\WinForms\obj\Debug\net10.0-windows\ref\WinForms.dll

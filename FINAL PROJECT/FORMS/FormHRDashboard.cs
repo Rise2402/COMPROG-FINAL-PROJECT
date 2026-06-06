@@ -34,9 +34,7 @@ namespace FINAL_PROJECT.FORMS
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Form1 frm = new Form1(); // Login Form
-            frm.Show();
-            this.Close();
+          
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -80,6 +78,43 @@ namespace FINAL_PROJECT.FORMS
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            Form1 frm = new Form1(); // Login Form
+            frm.Show();
+            this.Close();
+        }
+
+        private void lblCurrentStatus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
         {
 
         }

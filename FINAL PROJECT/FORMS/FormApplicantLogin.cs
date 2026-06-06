@@ -66,67 +66,116 @@ namespace FINAL_PROJECT.FORMS
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            string email = txtEmail.Text.Trim();
+            string password = txtPassword.Text.Trim();
+
+            if (email == "" || password == "")
             {
-                string email = txtEmail.Text.Trim();
-                string password = txtPassword.Text.Trim();
+                MessageBox.Show("Please enter email and password.");
+                return;
+            }
 
-                if (email == "" || password == "")
-                {
-                    MessageBox.Show("Please enter email and password.");
-                    return;
-                }
-
+            try
+            {
                 using (var conn = DBConnection.GetConnection())
                 {
                     conn.Open();
+
+                    // Check HR Users (Admin, HR Staff, HR Manager)
+                    string hrQuery = @"
+                SELECT RoleID, FullName
+                FROM Users
+                WHERE Email = @Email
+                AND PasswordHash = @Password
+                AND IsActive = TRUE";
+
+                    MySqlCommand cmd = new MySqlCommand(hrQuery, conn);
+                    cmd.Parameters.AddWithValue("@Email", email);
+                    cmd.Parameters.AddWithValue("@Password", password);
+
+                    MySqlDataReader reader = cmd.ExecuteReader();
+
+                    if (reader.Read())
+                    {
+                        int roleID = Convert.ToInt32(reader["RoleID"]);
+                        string fullName = reader["FullName"].ToString();
+                        reader.Close();
+
+                        if (roleID == 1)
+                        {
+                            MessageBox.Show($"Welcome, {fullName}! (Admin)");
+                            FormHRDashboard dash = new FormHRDashboard();
+                            dash.Show();
+                            this.Hide();
+                        }
+                        else if (roleID == 2)
+                        {
+                            MessageBox.Show($"Welcome, {fullName}! (HR Staff)");
+                            FormHRDashboard dash = new FormHRDashboard();
+                            dash.Show();
+                            this.Hide();
+                        }
+                        else if (roleID == 3)
+                        {
+                            MessageBox.Show($"Welcome, {fullName}! (HR Manager)");
+                            FormHRDashboard dash = new FormHRDashboard();
+                            dash.Show();
+                            this.Hide();
+                        }
+                        return;
+                    }
+                    reader.Close();
+
+                    // Check Applicants
                     string applicantQuery = @"
-                SELECT ApplicantAccountID
-                FROM ApplicantAccounts
-                WHERE Email=@Email AND PasswordHash=@Password";
+    SELECT ApplicantAccountID
+    FROM ApplicantAccounts
+    WHERE Email = @Email
+    AND PasswordHash = @Password
+    AND IsActive = TRUE";
 
-                    MySqlCommand cmd1 = new MySqlCommand(applicantQuery, conn);
-                    cmd1.Parameters.AddWithValue("@Email", email);
-                    cmd1.Parameters.AddWithValue("@Password", password);
+                    MySqlCommand cmd2 = new MySqlCommand(applicantQuery, conn);
+                    cmd2.Parameters.AddWithValue("@Email", email);
+                    cmd2.Parameters.AddWithValue("@Password", password);
 
-                    object applicantResult = cmd1.ExecuteScalar();
+                    object applicantResult = cmd2.ExecuteScalar();
 
                     if (applicantResult != null)
                     {
-                        MessageBox.Show("Welcome Applicant!");
+      
+                        Session.ApplicantAccountID = Convert.ToInt32(applicantResult);
+                        Session.Email = email;
 
+  
+                        string getApplicant = @"
+        SELECT ApplicantID, FirstName, LastName 
+        FROM Applicants 
+        WHERE ApplicantAccountID = @ID";
+
+                        MySqlCommand cmd3 = new MySqlCommand(getApplicant, conn);
+                        cmd3.Parameters.AddWithValue("@ID", Session.ApplicantAccountID);
+
+                        MySqlDataReader reader2 = cmd3.ExecuteReader();
+                        if (reader2.Read())
+                        {
+                            Session.ApplicantID = Convert.ToInt32(reader2["ApplicantID"]);
+                            Session.FullName = reader2["FirstName"].ToString() + " " + reader2["LastName"].ToString();
+                        }
+                        reader2.Close();
+
+                        MessageBox.Show("Welcome Applicant!");
                         FormApplicantDashboard dash = new FormApplicantDashboard();
                         dash.Show();
                         this.Hide();
                         return;
                     }
 
-                    string hrQuery = @"
-                SELECT u.UserID, r.RoleName
-                FROM Users u
-                INNER JOIN Roles r ON u.RoleID = r.RoleID
-                WHERE u.Username=@Username AND u.PasswordHash=@Password";
-
-                    MySqlCommand cmd2 = new MySqlCommand(hrQuery, conn);
-                    cmd2.Parameters.AddWithValue("@Username", email); // email textbox used as username
-                    cmd2.Parameters.AddWithValue("@Password", password);
-
-                    MySqlDataReader reader = cmd2.ExecuteReader();
-
-                    if (reader.Read())
-                    {
-                        string role = reader["RoleName"].ToString();
-
-                        MessageBox.Show("Welcome " + role);
-
-                        FormHRDashboard dash = new FormHRDashboard();
-                        dash.Show();
-                        this.Hide();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Invalid email or password!");
-                    }
+                    MessageBox.Show("Invalid email or password!");
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
 

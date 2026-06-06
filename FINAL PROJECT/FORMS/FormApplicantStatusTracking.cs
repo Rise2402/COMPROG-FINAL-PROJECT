@@ -1,8 +1,8 @@
-﻿using FINAL_PROJECT;
-using MySql.Data.MySqlClient;
-using System;
+﻿using System;
 using System.Data;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+using FINAL_PROJECT;
 
 namespace FINAL_PROJECT.FORMS
 {
@@ -17,12 +17,16 @@ namespace FINAL_PROJECT.FORMS
         {
             LoadStatusCombo();
             LoadApplications();
+
+            // Hide HR controls — applicants can only view
+            btnUpdateStatus.Visible = false;
+            cboStatus.Visible = false;
+            lblStatus.Visible = false;
         }
 
         private void LoadStatusCombo()
         {
             cboStatus.Items.Clear();
-
             cboStatus.Items.Add("Draft");
             cboStatus.Items.Add("Submitted");
             cboStatus.Items.Add("Under Review");
@@ -37,105 +41,61 @@ namespace FINAL_PROJECT.FORMS
 
         private void LoadApplications()
         {
-            using (MySqlConnection conn = DBConnection.GetConnection())
+            try
             {
-                conn.Open();
+                using (MySqlConnection conn = DBConnection.GetConnection())
+                {
+                    conn.Open();
 
-                string query = @"
-                SELECT
-                    a.ApplicationID,
-                    CONCAT(ap.FirstName,' ',ap.LastName) AS ApplicantName,
-                    j.JobTitle,
-                    a.ApplicationDate,
-                    a.CurrentStatus
-                FROM Applications a
-                INNER JOIN Applicants ap
-                    ON a.ApplicantID = ap.ApplicantID
-                INNER JOIN JobVacancies j
-                    ON a.JobVacancyID = j.JobVacancyID
-                ORDER BY a.ApplicationDate DESC";
+                    string query = @"
+                        SELECT
+                            a.ApplicationID,
+                            CONCAT(ap.FirstName,' ',ap.LastName) AS ApplicantName,
+                            j.JobTitle,
+                            a.ApplicationDate,
+                            a.CurrentStatus
+                        FROM Applications a
+                        INNER JOIN Applicants ap ON a.ApplicantID = ap.ApplicantID
+                        INNER JOIN JobVacancies j ON a.JobVacancyID = j.JobVacancyID
+                        WHERE a.ApplicantID = @ApplicantID
+                        ORDER BY a.ApplicationDate DESC";
 
-                MySqlDataAdapter da = new MySqlDataAdapter(query, conn);
-                DataTable dt = new DataTable();
+                    MySqlDataAdapter da = new MySqlDataAdapter(query, conn);
+                    da.SelectCommand.Parameters.AddWithValue("@ApplicantID", Session.ApplicantID);
 
-                da.Fill(dt);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
 
-                dgvApplications.DataSource = dt;
-                dgvApplications.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-                dgvApplications.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-                dgvApplications.MultiSelect = false;
-                dgvApplications.ReadOnly = true;
+                    dgvApplications.DataSource = dt;
+                    dgvApplications.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                    dgvApplications.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                    dgvApplications.MultiSelect = false;
+                    dgvApplications.ReadOnly = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading applications: " + ex.Message);
             }
         }
 
         private void btnUpdateStatus_Click(object sender, EventArgs e)
         {
+            // HR only - hidden from applicants
+        }
+
+        private void btnViewHistory_Click(object sender, EventArgs e)
+        {
             if (dgvApplications.SelectedRows.Count == 0)
             {
-                MessageBox.Show("Please select an applicant.");
-                return;
-            }
-
-            if (cboStatus.SelectedItem == null)
-            {
-                MessageBox.Show("Please select a status.");
+                MessageBox.Show("Please select an application.");
                 return;
             }
 
             int applicationID = Convert.ToInt32(
                 dgvApplications.SelectedRows[0].Cells["ApplicationID"].Value);
 
-            string status = cboStatus.SelectedItem.ToString();
-
-            using (MySqlConnection conn = DBConnection.GetConnection())
-            {
-                conn.Open();
-
-                string updateQuery = @"
-                    UPDATE Applications
-                    SET CurrentStatus = @status
-                    WHERE ApplicationID = @id";
-
-                MySqlCommand cmd = new MySqlCommand(updateQuery, conn);
-
-                cmd.Parameters.AddWithValue("@status", status);
-                cmd.Parameters.AddWithValue("@id", applicationID);
-
-                cmd.ExecuteNonQuery();
-
-                string historyQuery = @"
-                    INSERT INTO ApplicationStatusHistory
-                    (
-                        ApplicationID,
-                        StatusName,
-                        Remarks,
-                        ChangedBy
-                    )
-                    VALUES
-                    (
-                        @appID,
-                        @status,
-                        'Status Updated',
-                        NULL
-                    )";
-
-                MySqlCommand historyCmd =
-                    new MySqlCommand(historyQuery, conn);
-
-                historyCmd.Parameters.AddWithValue("@appID", applicationID);
-                historyCmd.Parameters.AddWithValue("@status", status);
-
-                historyCmd.ExecuteNonQuery();
-
-                MessageBox.Show("Status updated successfully.");
-
-                LoadApplications();
-            }
-        }
-
-        private void btnViewHistory_Click(object sender, EventArgs e)
-        {
-            dgvHistory frm = new dgvHistory();
+            FormStatusHistory frm = new FormStatusHistory(applicationID);
             frm.ShowDialog();
         }
     }

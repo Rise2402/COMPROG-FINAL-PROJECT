@@ -178,6 +178,7 @@
             // 
             // lblCurrentStatus
             // 
+            this.lblCurrentStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCurrentStatus.ForeColor = System.Drawing.Color.White;
             this.lblCurrentStatus.Location = new System.Drawing.Point(0, 55);
             this.lblCurrentStatus.Name = "lblCurrentStatus";
@@ -212,6 +213,7 @@
             // 
             // lblInterviewStatus
             // 
+            this.lblInterviewStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInterviewStatus.ForeColor = System.Drawing.Color.White;
             this.lblInterviewStatus.Location = new System.Drawing.Point(0, 55);
             this.lblInterviewStatus.Name = "lblInterviewStatus";
@@ -246,6 +248,7 @@
             // 
             // lblMissingDocs
             // 
+            this.lblMissingDocs.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMissingDocs.ForeColor = System.Drawing.Color.White;
             this.lblMissingDocs.Location = new System.Drawing.Point(0, 55);
             this.lblMissingDocs.Name = "lblMissingDocs";
@@ -286,11 +289,11 @@
             this.colDate,
             this.colStatus,
             this.colRemarks});
-            this.dataGridView1.Location = new System.Drawing.Point(490, 362);
+            this.dataGridView1.Location = new System.Drawing.Point(348, 362);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(428, 103);
+            this.dataGridView1.Size = new System.Drawing.Size(707, 103);
             this.dataGridView1.TabIndex = 13;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 

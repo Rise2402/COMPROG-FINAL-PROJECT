@@ -1,23 +1,59 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace FINAL_PROJECT.FORMS
 {
-    public partial class dgvHistory : Form
+    public partial class FormStatusHistory : Form
     {
-        public dgvHistory()
+        private int _applicationID;
+
+        public FormStatusHistory(int applicationID)
         {
             InitializeComponent();
+            _applicationID = applicationID;
         }
 
-        private void dgvHistory_Load(object sender, EventArgs e)
+        private void FormStatusHistory_Load(object sender, EventArgs e)
         {
+            LoadHistory();
+        }
 
+        private void LoadHistory()
+        {
+            try
+            {
+                using (MySqlConnection conn = DBConnection.GetConnection())
+                {
+                    conn.Open();
+
+                    string query = @"
+                        SELECT 
+                            StatusName AS Status,
+                            Remarks,
+                            DateChanged AS Date
+                        FROM ApplicationStatusHistory
+                        WHERE ApplicationID = @AppID
+                        ORDER BY DateChanged ASC";
+
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@AppID", _applicationID);
+
+                    MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+
+                    dgvHistory.DataSource = dt;
+                    dgvHistory.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                    dgvHistory.ReadOnly = true;
+                    dgvHistory.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading history: " + ex.Message);
+            }
         }
     }
 }

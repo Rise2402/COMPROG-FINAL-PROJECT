@@ -53,7 +53,7 @@ namespace FINAL_PROJECT.FORMS
             }
         }
 
-        
+
         private void LoadMissingDocuments(int applicantID)
         {
             try
@@ -62,19 +62,43 @@ namespace FINAL_PROJECT.FORMS
                 {
                     conn.Open();
 
-                    string query = @"
-            SELECT COUNT(*)
-            FROM ApplicantDocuments
-            WHERE ApplicantID = @ApplicantID
-            AND Status = 'Missing'";
+                    string requiredQuery = @"
+                SELECT COUNT(DISTINCT jvr.RequirementTypeID)
+                FROM Applications a
+                INNER JOIN JobVacancyRequirements jvr
+                    ON a.JobVacancyID = jvr.JobVacancyID
+                WHERE a.ApplicantID = @ApplicantID";
 
-                    MySqlCommand cmd = new MySqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@ApplicantID", applicantID);
+                    MySqlCommand requiredCmd =
+                        new MySqlCommand(requiredQuery, conn);
 
-                    int count =
-                        Convert.ToInt32(cmd.ExecuteScalar());
+                    requiredCmd.Parameters.AddWithValue(
+                        "@ApplicantID",
+                        applicantID);
 
-                    lblMissingDocs.Text = count.ToString();
+                    int requiredCount =
+                        Convert.ToInt32(requiredCmd.ExecuteScalar());
+
+                    string uploadedQuery = @"
+                SELECT COUNT(DISTINCT RequirementTypeID)
+                FROM ApplicantDocuments
+                WHERE ApplicantID = @ApplicantID";
+
+                    MySqlCommand uploadedCmd =
+                        new MySqlCommand(uploadedQuery, conn);
+
+                    uploadedCmd.Parameters.AddWithValue(
+                        "@ApplicantID",
+                        applicantID);
+
+                    int uploadedCount =
+                        Convert.ToInt32(uploadedCmd.ExecuteScalar());
+
+                    int missingCount =
+                        Math.Max(0, requiredCount - uploadedCount);
+
+                    lblMissingDocs.Text =
+                        missingCount.ToString();
                 }
             }
             catch (Exception ex)
@@ -83,7 +107,7 @@ namespace FINAL_PROJECT.FORMS
             }
         }
 
-       
+
         private void LoadInterviewStatus(int applicantID)
         {
             try
@@ -198,7 +222,7 @@ namespace FINAL_PROJECT.FORMS
 
         private void FormApplicantDashboard_Load(object sender, EventArgs e)
         {
-            int applicantID = 1;
+            int applicantID = Session.ApplicantID;
 
             LoadCurrentStatus(applicantID);
             LoadMissingDocuments(applicantID);
@@ -229,7 +253,7 @@ namespace FINAL_PROJECT.FORMS
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Form1 frm = new Form1(); // Login Form
+            Form1 frm = new Form1();
             frm.Show();
             this.Close();
         }
@@ -246,22 +270,26 @@ namespace FINAL_PROJECT.FORMS
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            FormApplicantDocuments frm = new FormApplicantDocuments();
+            frm.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            FormApplicationPage frm = new FormApplicationPage();
+            frm.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            FormJobVacancies frm = new FormJobVacancies();
+            frm.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            FormApplicantProfile frm = new FormApplicantProfile();
+            frm.ShowDialog();
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)

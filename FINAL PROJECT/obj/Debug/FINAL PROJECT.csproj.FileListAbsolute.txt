@@ -35,7 +35,6 @@ C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\obj\Debug\FINAL 
 C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\obj\Debug\FINAL_PROJECT.FORMS.FormApplicantDashboard.resources
 C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\obj\Debug\FINAL_PROJECT.FORMS.Form1.resources
 C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\obj\Debug\FINAL_PROJECT.FORMS.FormApplicantRegister.resources
-C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\obj\Debug\FINAL_PROJECT.FORMS.FormApplicanDocuments.resources
 C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\obj\Debug\FINAL_PROJECT.FORMS.FormHRDashboard.resources
 C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\obj\Debug\FINAL_PROJECT.Properties.Resources.resources
 C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\obj\Debug\FINAL PROJECT.csproj.GenerateResource.cache
@@ -94,3 +93,10 @@ C:\Users\godxd\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\obj\Debug\FINAL 
 C:\Users\godxd\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\obj\Debug\FINAL PROJECT.exe
 C:\Users\godxd\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\obj\Debug\FINAL PROJECT.pdb
 C:\Users\godxd\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\obj\Debug\FINAL_PROJECT.FORMS.JobVacancyManagement.resources
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\obj\Debug\FINAL_PROJECT.FORMS.FormApplicantDocuments.resources
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\obj\Debug\FINAL_PROJECT.FORMS.FormApplicationPage.resources
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\obj\Debug\FINAL_PROJECT.FORMS.FormJobVacancies.resources
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\obj\Debug\FINAL_PROJECT.FORMS.FormApplicantProfile.resources
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\obj\Debug\FINAL_PROJECT.FORMS.FormApplicantStatusTracking.resources
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\obj\Debug\FINAL_PROJECT.FORMS.FormStatusHistory.resources
+C:\Users\chris\source\repos\COMPROG-FINAL-PROJECT\FINAL PROJECT\obj\Debug\FINAL_PROJECT.FORMS.JobVacancyManagement.resources

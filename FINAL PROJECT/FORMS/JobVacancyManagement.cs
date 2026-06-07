@@ -16,6 +16,7 @@ namespace FINAL_PROJECT.FORMS
     {
 
         DataTable dtVacancies = new DataTable();
+        int editingRowIndex = -1;
 
         private void SetRoundedPanel(Panel panel, int radius)
         {
@@ -132,6 +133,10 @@ namespace FINAL_PROJECT.FORMS
             dtVacancies.Columns.Add("Status");
 
             dataGridView1.DataSource = dtVacancies;
+
+            dataGridView1.ReadOnly = true;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.MultiSelect = false;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -180,18 +185,36 @@ namespace FINAL_PROJECT.FORMS
                 MessageBox.Show("Please select a status."); return;
             }
 
-            dtVacancies.Rows.Add(
-                txtJobTitle.Text,
-                cmbDepartment.SelectedItem.ToString(),
-                txtQualifications.Text,
-                (int)numSlots.Value,
-                dtpDeadline.Value.ToString("MM/dd/yyyy"),
-                cmbStatus.SelectedItem.ToString()
-            );
+            if (editingRowIndex >= 0)
+            {
 
+                DataRow row = dtVacancies.Rows[editingRowIndex];
+                row["Job Title"] = txtJobTitle.Text;
+                row["Department"] = cmbDepartment.SelectedItem.ToString();
+                row["Qualifications"] = txtQualifications.Text;
+                row["Slots"] = (int)numSlots.Value;
+                row["Deadline"] = dtpDeadline.Value.ToString("MM/dd/yyyy");
+                row["Status"] = cmbStatus.SelectedItem.ToString();
+
+                editingRowIndex = -1;
+            }
+            else
+            {
+                dtVacancies.Rows.Add(
+                    txtJobTitle.Text,
+                    cmbDepartment.SelectedItem.ToString(),
+                    txtQualifications.Text,
+                    (int)numSlots.Value,
+                    dtpDeadline.Value.ToString("MM/dd/yyyy"),
+                    cmbStatus.SelectedItem.ToString()
+                );
+            }
+
+            dataGridView1.DataSource = null;
             dataGridView1.DataSource = dtVacancies;
             UpdateStats();
             ClearInputs();
+            panelVacancy.Visible = false;
         }
 
         private void tbxSearchbar_TextChanged(object sender, EventArgs e)
@@ -207,6 +230,47 @@ namespace FINAL_PROJECT.FORMS
         private void comboDepartment_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEdit_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dataGridView1.SelectedRows.Count == 0)
+                {
+                    MessageBox.Show("Please select a vacancy to edit.", "No Selection",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
+
+                txtJobTitle.Text = selectedRow.Cells["Job Title"].Value?.ToString();
+                cmbDepartment.SelectedItem = selectedRow.Cells["Department"].Value?.ToString();
+                txtQualifications.Text = selectedRow.Cells["Qualifications"].Value?.ToString();
+                numSlots.Value = Convert.ToDecimal(selectedRow.Cells["Slots"].Value);
+
+                string deadlineStr = selectedRow.Cells["Deadline"].Value?.ToString();
+                if (!string.IsNullOrEmpty(deadlineStr) && DateTime.TryParse(deadlineStr, out DateTime deadline))
+                    dtpDeadline.Value = deadline;
+                else
+                    dtpDeadline.Value = DateTime.Today;
+
+                cmbStatus.SelectedItem = selectedRow.Cells["Status"].Value?.ToString();
+
+                editingRowIndex = dataGridView1.SelectedRows[0].Index;
+                panelVacancy.Visible = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

@@ -56,7 +56,8 @@ namespace FINAL_PROJECT.FORMS
 
         private void button9_Click(object sender, EventArgs e)
         {
-
+            FormHRReportsPage frm = new FormHRReportsPage();
+            frm.Show();
         }
 
         private void button10_Click(object sender, EventArgs e)

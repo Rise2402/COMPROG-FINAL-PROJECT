@@ -90,7 +90,7 @@
             this.lblPageTitle.ForeColor = System.Drawing.Color.White;
             this.lblPageTitle.Location = new System.Drawing.Point(20, 10);
             this.lblPageTitle.Name = "lblPageTitle";
-            this.lblPageTitle.Size = new System.Drawing.Size(235, 41);
+            this.lblPageTitle.Size = new System.Drawing.Size(189, 32);
             this.lblPageTitle.TabIndex = 0;
             this.lblPageTitle.Text = "My Application";
             // 
@@ -101,7 +101,7 @@
             this.lblPageSubtitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(210)))), ((int)(((byte)(255)))));
             this.lblPageSubtitle.Location = new System.Drawing.Point(22, 45);
             this.lblPageSubtitle.Name = "lblPageSubtitle";
-            this.lblPageSubtitle.Size = new System.Drawing.Size(266, 20);
+            this.lblPageSubtitle.Size = new System.Drawing.Size(210, 15);
             this.lblPageSubtitle.TabIndex = 1;
             this.lblPageSubtitle.Text = "View and manage your job application";
             // 
@@ -184,7 +184,7 @@
             this.lblNoAppIcon.Font = new System.Drawing.Font("Segoe UI", 48F);
             this.lblNoAppIcon.Location = new System.Drawing.Point(340, 73);
             this.lblNoAppIcon.Name = "lblNoAppIcon";
-            this.lblNoAppIcon.Size = new System.Drawing.Size(155, 106);
+            this.lblNoAppIcon.Size = new System.Drawing.Size(125, 86);
             this.lblNoAppIcon.TabIndex = 0;
             this.lblNoAppIcon.Text = "📄";
             this.lblNoAppIcon.Click += new System.EventHandler(this.lblNoAppIcon_Click);
@@ -196,7 +196,7 @@
             this.lblNoAppMsg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(70)))), ((int)(((byte)(90)))));
             this.lblNoAppMsg.Location = new System.Drawing.Point(270, 170);
             this.lblNoAppMsg.Name = "lblNoAppMsg";
-            this.lblNoAppMsg.Size = new System.Drawing.Size(283, 41);
+            this.lblNoAppMsg.Size = new System.Drawing.Size(229, 32);
             this.lblNoAppMsg.TabIndex = 1;
             this.lblNoAppMsg.Text = "No Application Yet";
             // 
@@ -263,7 +263,7 @@
             this.lblJobAppliedTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(110)))), ((int)(((byte)(130)))));
             this.lblJobAppliedTitle.Location = new System.Drawing.Point(15, 30);
             this.lblJobAppliedTitle.Name = "lblJobAppliedTitle";
-            this.lblJobAppliedTitle.Size = new System.Drawing.Size(128, 20);
+            this.lblJobAppliedTitle.Size = new System.Drawing.Size(99, 15);
             this.lblJobAppliedTitle.TabIndex = 0;
             this.lblJobAppliedTitle.Text = "Position Applied:";
             // 
@@ -274,7 +274,7 @@
             this.lblJobApplied.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
             this.lblJobApplied.Location = new System.Drawing.Point(15, 50);
             this.lblJobApplied.Name = "lblJobApplied";
-            this.lblJobApplied.Size = new System.Drawing.Size(31, 25);
+            this.lblJobApplied.Size = new System.Drawing.Size(24, 20);
             this.lblJobApplied.TabIndex = 1;
             this.lblJobApplied.Text = "—";
             // 
@@ -285,7 +285,7 @@
             this.lblStatusTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(110)))), ((int)(((byte)(130)))));
             this.lblStatusTitle.Location = new System.Drawing.Point(15, 85);
             this.lblStatusTitle.Name = "lblStatusTitle";
-            this.lblStatusTitle.Size = new System.Drawing.Size(57, 20);
+            this.lblStatusTitle.Size = new System.Drawing.Size(45, 15);
             this.lblStatusTitle.TabIndex = 2;
             this.lblStatusTitle.Text = "Status:";
             // 
@@ -307,7 +307,7 @@
             this.lblDateAppliedTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(110)))), ((int)(((byte)(130)))));
             this.lblDateAppliedTitle.Location = new System.Drawing.Point(220, 85);
             this.lblDateAppliedTitle.Name = "lblDateAppliedTitle";
-            this.lblDateAppliedTitle.Size = new System.Drawing.Size(104, 20);
+            this.lblDateAppliedTitle.Size = new System.Drawing.Size(82, 15);
             this.lblDateAppliedTitle.TabIndex = 4;
             this.lblDateAppliedTitle.Text = "Date Applied:";
             // 
@@ -318,7 +318,7 @@
             this.lblDateApplied.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(60)))), ((int)(((byte)(80)))));
             this.lblDateApplied.Location = new System.Drawing.Point(220, 107);
             this.lblDateApplied.Name = "lblDateApplied";
-            this.lblDateApplied.Size = new System.Drawing.Size(27, 23);
+            this.lblDateApplied.Size = new System.Drawing.Size(23, 19);
             this.lblDateApplied.TabIndex = 5;
             this.lblDateApplied.Text = "—";
             // 
@@ -366,7 +366,7 @@
             this.lblNameTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(110)))), ((int)(((byte)(130)))));
             this.lblNameTitle.Location = new System.Drawing.Point(15, 30);
             this.lblNameTitle.Name = "lblNameTitle";
-            this.lblNameTitle.Size = new System.Drawing.Size(84, 20);
+            this.lblNameTitle.Size = new System.Drawing.Size(65, 15);
             this.lblNameTitle.TabIndex = 0;
             this.lblNameTitle.Text = "Full Name:";
             // 
@@ -387,7 +387,7 @@
             this.lblEmailTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(110)))), ((int)(((byte)(130)))));
             this.lblEmailTitle.Location = new System.Drawing.Point(15, 80);
             this.lblEmailTitle.Name = "lblEmailTitle";
-            this.lblEmailTitle.Size = new System.Drawing.Size(51, 20);
+            this.lblEmailTitle.Size = new System.Drawing.Size(39, 15);
             this.lblEmailTitle.TabIndex = 2;
             this.lblEmailTitle.Text = "Email:";
             // 
@@ -408,7 +408,7 @@
             this.lblPhoneTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(110)))), ((int)(((byte)(130)))));
             this.lblPhoneTitle.Location = new System.Drawing.Point(15, 130);
             this.lblPhoneTitle.Name = "lblPhoneTitle";
-            this.lblPhoneTitle.Size = new System.Drawing.Size(57, 20);
+            this.lblPhoneTitle.Size = new System.Drawing.Size(45, 15);
             this.lblPhoneTitle.TabIndex = 4;
             this.lblPhoneTitle.Text = "Phone:";
             // 
@@ -429,7 +429,7 @@
             this.lblAddressTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(110)))), ((int)(((byte)(130)))));
             this.lblAddressTitle.Location = new System.Drawing.Point(15, 180);
             this.lblAddressTitle.Name = "lblAddressTitle";
-            this.lblAddressTitle.Size = new System.Drawing.Size(70, 20);
+            this.lblAddressTitle.Size = new System.Drawing.Size(54, 15);
             this.lblAddressTitle.TabIndex = 6;
             this.lblAddressTitle.Text = "Address:";
             // 
@@ -450,7 +450,7 @@
             this.lblSkillsTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(110)))), ((int)(((byte)(130)))));
             this.lblSkillsTitle.Location = new System.Drawing.Point(15, 230);
             this.lblSkillsTitle.Name = "lblSkillsTitle";
-            this.lblSkillsTitle.Size = new System.Drawing.Size(48, 20);
+            this.lblSkillsTitle.Size = new System.Drawing.Size(38, 15);
             this.lblSkillsTitle.TabIndex = 8;
             this.lblSkillsTitle.Text = "Skills:";
             // 
@@ -506,7 +506,7 @@
             this.lblEditFirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(90)))), ((int)(((byte)(110)))));
             this.lblEditFirstName.Location = new System.Drawing.Point(15, 30);
             this.lblEditFirstName.Name = "lblEditFirstName";
-            this.lblEditFirstName.Size = new System.Drawing.Size(97, 20);
+            this.lblEditFirstName.Size = new System.Drawing.Size(75, 15);
             this.lblEditFirstName.TabIndex = 0;
             this.lblEditFirstName.Text = "First Name *";
             // 
@@ -516,7 +516,7 @@
             this.txtEditFirstName.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtEditFirstName.Location = new System.Drawing.Point(15, 50);
             this.txtEditFirstName.Name = "txtEditFirstName";
-            this.txtEditFirstName.Size = new System.Drawing.Size(340, 30);
+            this.txtEditFirstName.Size = new System.Drawing.Size(340, 25);
             this.txtEditFirstName.TabIndex = 1;
             // 
             // lblEditLastName
@@ -526,7 +526,7 @@
             this.lblEditLastName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(90)))), ((int)(((byte)(110)))));
             this.lblEditLastName.Location = new System.Drawing.Point(375, 30);
             this.lblEditLastName.Name = "lblEditLastName";
-            this.lblEditLastName.Size = new System.Drawing.Size(95, 20);
+            this.lblEditLastName.Size = new System.Drawing.Size(73, 15);
             this.lblEditLastName.TabIndex = 2;
             this.lblEditLastName.Text = "Last Name *";
             // 
@@ -536,7 +536,7 @@
             this.txtEditLastName.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtEditLastName.Location = new System.Drawing.Point(375, 50);
             this.txtEditLastName.Name = "txtEditLastName";
-            this.txtEditLastName.Size = new System.Drawing.Size(340, 30);
+            this.txtEditLastName.Size = new System.Drawing.Size(340, 25);
             this.txtEditLastName.TabIndex = 3;
             // 
             // lblEditEmail
@@ -546,7 +546,7 @@
             this.lblEditEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(90)))), ((int)(((byte)(110)))));
             this.lblEditEmail.Location = new System.Drawing.Point(15, 100);
             this.lblEditEmail.Name = "lblEditEmail";
-            this.lblEditEmail.Size = new System.Drawing.Size(58, 20);
+            this.lblEditEmail.Size = new System.Drawing.Size(44, 15);
             this.lblEditEmail.TabIndex = 4;
             this.lblEditEmail.Text = "Email *";
             // 
@@ -556,7 +556,7 @@
             this.txtEditEmail.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtEditEmail.Location = new System.Drawing.Point(15, 120);
             this.txtEditEmail.Name = "txtEditEmail";
-            this.txtEditEmail.Size = new System.Drawing.Size(340, 30);
+            this.txtEditEmail.Size = new System.Drawing.Size(340, 25);
             this.txtEditEmail.TabIndex = 5;
             // 
             // lblEditPhone
@@ -566,7 +566,7 @@
             this.lblEditPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(90)))), ((int)(((byte)(110)))));
             this.lblEditPhone.Location = new System.Drawing.Point(375, 100);
             this.lblEditPhone.Name = "lblEditPhone";
-            this.lblEditPhone.Size = new System.Drawing.Size(53, 20);
+            this.lblEditPhone.Size = new System.Drawing.Size(42, 15);
             this.lblEditPhone.TabIndex = 6;
             this.lblEditPhone.Text = "Phone";
             // 
@@ -576,7 +576,7 @@
             this.txtEditPhone.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtEditPhone.Location = new System.Drawing.Point(375, 120);
             this.txtEditPhone.Name = "txtEditPhone";
-            this.txtEditPhone.Size = new System.Drawing.Size(340, 30);
+            this.txtEditPhone.Size = new System.Drawing.Size(340, 25);
             this.txtEditPhone.TabIndex = 7;
             // 
             // lblEditAddress
@@ -586,7 +586,7 @@
             this.lblEditAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(90)))), ((int)(((byte)(110)))));
             this.lblEditAddress.Location = new System.Drawing.Point(15, 170);
             this.lblEditAddress.Name = "lblEditAddress";
-            this.lblEditAddress.Size = new System.Drawing.Size(66, 20);
+            this.lblEditAddress.Size = new System.Drawing.Size(51, 15);
             this.lblEditAddress.TabIndex = 8;
             this.lblEditAddress.Text = "Address";
             // 
@@ -596,7 +596,7 @@
             this.txtEditAddress.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtEditAddress.Location = new System.Drawing.Point(15, 190);
             this.txtEditAddress.Name = "txtEditAddress";
-            this.txtEditAddress.Size = new System.Drawing.Size(700, 30);
+            this.txtEditAddress.Size = new System.Drawing.Size(700, 25);
             this.txtEditAddress.TabIndex = 9;
             // 
             // lblEditSkills
@@ -606,7 +606,7 @@
             this.lblEditSkills.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(90)))), ((int)(((byte)(110)))));
             this.lblEditSkills.Location = new System.Drawing.Point(15, 250);
             this.lblEditSkills.Name = "lblEditSkills";
-            this.lblEditSkills.Size = new System.Drawing.Size(155, 20);
+            this.lblEditSkills.Size = new System.Drawing.Size(121, 15);
             this.lblEditSkills.TabIndex = 10;
             this.lblEditSkills.Text = "Skills / Qualifications";
             // 

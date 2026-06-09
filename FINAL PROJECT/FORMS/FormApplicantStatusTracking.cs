@@ -98,5 +98,25 @@ namespace FINAL_PROJECT.FORMS
             FormStatusHistory frm = new FormStatusHistory(applicationID);
             frm.ShowDialog();
         }
+
+        private void dgvApplications_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void lblTitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboStatus_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

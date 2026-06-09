@@ -39,7 +39,8 @@ namespace FINAL_PROJECT.FORMS
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            FormHRApplicantReviewandScreening frm = new FormHRApplicantReviewandScreening();
+            frm.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -49,7 +50,8 @@ namespace FINAL_PROJECT.FORMS
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            FormHRInterviewSchedule frm = new FormHRInterviewSchedule();
+            frm.Show();
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -69,7 +71,8 @@ namespace FINAL_PROJECT.FORMS
 
         private void button7_Click(object sender, EventArgs e)
         {
-
+            FormHRInterviewEvaluation frm = new FormHRInterviewEvaluation();
+            frm.Show();
         }
 
         private void panel1_Paint_1(object sender, PaintEventArgs e)
@@ -79,7 +82,8 @@ namespace FINAL_PROJECT.FORMS
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            FormHRJobVacancyManagement frm = new FormHRJobVacancyManagement();
+            frm.Show();
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -117,6 +121,12 @@ namespace FINAL_PROJECT.FORMS
         private void label11_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormHRApplicantList frm = new FormHRApplicantList();
+            frm.Show();
         }
     }
 }

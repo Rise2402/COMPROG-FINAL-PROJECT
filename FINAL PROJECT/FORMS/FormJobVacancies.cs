@@ -3,6 +3,7 @@ using System.Data;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using FINAL_PROJECT;
+using Mysqlx.Connection;
 
 namespace FINAL_PROJECT.FORMS
 {
@@ -90,17 +91,6 @@ namespace FINAL_PROJECT.FORMS
             lstRequirements.Items.Add("Resume");
             lstRequirements.Items.Add("Government ID");
             lstRequirements.Items.Add("Transcript of Records");
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-                DisplayJobDetails(e.RowIndex);
-        }
-
-        private void btnSearch_Click(object sender, EventArgs e)
-        {
-            LoadJobs(txtSearch.Text.Trim());
         }
 
         private void btnApply_Click(object sender, EventArgs e)
@@ -198,6 +188,11 @@ namespace FINAL_PROJECT.FORMS
         private void btnApply_Click_1(object sender, EventArgs e)
         {
             btnApply_Click(sender, e);
+        }
+
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

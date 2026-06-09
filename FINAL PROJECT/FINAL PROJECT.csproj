@@ -112,6 +112,36 @@
     <Compile Include="FORMS\FormApplicationPage.Designer.cs">
       <DependentUpon>FormApplicationPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="FORMS\FormHRApplicantList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\FormHRApplicantList.Designer.cs">
+      <DependentUpon>FormHRApplicantList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\FormHRApplicantReviewandScreening.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\FormHRApplicantReviewandScreening.Designer.cs">
+      <DependentUpon>FormHRApplicantReviewandScreening.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\FormHRInterviewEvaluation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\FormHRInterviewEvaluation.Designer.cs">
+      <DependentUpon>FormHRInterviewEvaluation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\FormHRInterviewSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\FormHRInterviewSchedule.Designer.cs">
+      <DependentUpon>FormHRInterviewSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\FormHRJobVacancyManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\FormHRJobVacancyManagement.Designer.cs">
+      <DependentUpon>FormHRJobVacancyManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="FORMS\FormJobVacancies.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +198,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FORMS\FormApplicationPage.resx">
       <DependentUpon>FormApplicationPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\FormHRApplicantList.resx">
+      <DependentUpon>FormHRApplicantList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\FormHRApplicantReviewandScreening.resx">
+      <DependentUpon>FormHRApplicantReviewandScreening.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\FormHRInterviewEvaluation.resx">
+      <DependentUpon>FormHRInterviewEvaluation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\FormHRInterviewSchedule.resx">
+      <DependentUpon>FormHRInterviewSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\FormHRJobVacancyManagement.resx">
+      <DependentUpon>FormHRJobVacancyManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FORMS\FormJobVacancies.resx">
       <DependentUpon>FormJobVacancies.cs</DependentUpon>

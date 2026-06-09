@@ -35,7 +35,6 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -76,7 +75,7 @@
             this.btnexit.Location = new System.Drawing.Point(1372, 12);
             this.btnexit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnexit.Name = "btnexit";
-            this.btnexit.Size = new System.Drawing.Size(23, 22);
+            this.btnexit.Size = new System.Drawing.Size(19, 18);
             this.btnexit.TabIndex = 20;
             this.btnexit.Text = "X";
             this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
@@ -134,7 +133,7 @@
             this.button6.BackColor = System.Drawing.Color.Red;
             this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(76, 660);
+            this.button6.Location = new System.Drawing.Point(83, 624);
             this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(179, 52);
@@ -176,7 +175,6 @@
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button6);
@@ -193,7 +191,7 @@
             // 
             this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(4, 466);
+            this.button10.Location = new System.Drawing.Point(3, 403);
             this.button10.Margin = new System.Windows.Forms.Padding(4);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(348, 51);
@@ -206,7 +204,7 @@
             // 
             this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(4, 526);
+            this.button9.Location = new System.Drawing.Point(3, 462);
             this.button9.Margin = new System.Windows.Forms.Padding(4);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(348, 51);
@@ -219,7 +217,7 @@
             // 
             this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(4, 586);
+            this.button8.Location = new System.Drawing.Point(3, 526);
             this.button8.Margin = new System.Windows.Forms.Padding(4);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(348, 51);
@@ -232,7 +230,7 @@
             // 
             this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(3, 406);
+            this.button7.Location = new System.Drawing.Point(3, 344);
             this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(349, 51);
@@ -245,7 +243,7 @@
             // 
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(3, 346);
+            this.button5.Location = new System.Drawing.Point(3, 285);
             this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(349, 51);
@@ -253,19 +251,6 @@
             this.button5.Text = "INTERVIEW SCHEDULE";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button4
-            // 
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(3, 286);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(349, 51);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "SCREENING";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -276,7 +261,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(349, 51);
             this.button3.TabIndex = 8;
-            this.button3.Text = "APPLICANT REVIEW";
+            this.button3.Text = "APPLICANT REVIEW AND SCREENING";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -291,6 +276,7 @@
             this.button2.TabIndex = 7;
             this.button2.Text = "APPLICANT LIST";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel3
             // 
@@ -504,7 +490,7 @@
             // 
             // FormHRDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1408, 765);
             this.Controls.Add(this.dataGridView2);
@@ -547,7 +533,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button10;

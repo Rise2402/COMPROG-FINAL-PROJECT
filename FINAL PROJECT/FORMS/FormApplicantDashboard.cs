@@ -316,5 +316,15 @@ namespace FINAL_PROJECT.FORMS
         {
 
         }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            int applicantID = Session.ApplicantID;
+
+            LoadCurrentStatus(applicantID);
+            LoadMissingDocuments(applicantID);
+            LoadInterviewStatus(applicantID);
+            LoadRecentUpdates(applicantID);
+        }
     }
 }

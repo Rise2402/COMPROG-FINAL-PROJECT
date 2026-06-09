@@ -83,11 +83,11 @@ namespace FINAL_PROJECT.FORMS
 
                     // Check HR Users (Admin, HR Staff, HR Manager)
                     string hrQuery = @"
-                SELECT RoleID, FullName
-                FROM Users
-                WHERE Email = @Email
-                AND PasswordHash = @Password
-                AND IsActive = TRUE";
+    SELECT UserID, RoleID, FullName
+    FROM Users
+    WHERE Email = @Email
+    AND PasswordHash = @Password
+    AND IsActive = TRUE";
 
                     MySqlCommand cmd = new MySqlCommand(hrQuery, conn);
                     cmd.Parameters.AddWithValue("@Email", email);
@@ -97,9 +97,14 @@ namespace FINAL_PROJECT.FORMS
 
                     if (reader.Read())
                     {
+                        int userID = Convert.ToInt32(reader["UserID"]);
                         int roleID = Convert.ToInt32(reader["RoleID"]);
                         string fullName = reader["FullName"].ToString();
                         reader.Close();
+
+                        Session.UserID = userID;          
+                        Session.RoleID = roleID;            
+                        Session.HRFullName = fullName;    
 
                         if (roleID == 1)
                         {

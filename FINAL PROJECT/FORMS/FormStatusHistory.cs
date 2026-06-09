@@ -55,5 +55,15 @@ namespace FINAL_PROJECT.FORMS
                 MessageBox.Show("Error loading history: " + ex.Message);
             }
         }
+
+        private void dgvHistory_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

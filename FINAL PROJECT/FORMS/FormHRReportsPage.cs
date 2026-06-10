@@ -39,18 +39,17 @@ namespace FINAL_PROJECT.FORMS
                 {
                     conn.Open();
                     string sql = @"
-                        SELECT
-                            ap.ApplicantID                              AS 'ID',
-                            CONCAT(ap.FirstName, ' ', ap.LastName)     AS 'Full Name',
-                            ap.Email                                    AS 'Email',
-                            ap.Phone                                    AS 'Phone',
-                            COALESCE(a.CurrentStatus, 'No Application') AS 'Status',
-                            COALESCE(jv.JobTitle, '—')                 AS 'Position Applied',
-                            COALESCE(CAST(a.ApplicationDate AS CHAR), '—') AS 'Date Applied'
-                        FROM Applicants ap
-                        LEFT JOIN Applications a  ON ap.ApplicantID = a.ApplicantID
-                        LEFT JOIN JobVacancies jv ON a.JobVacancyID = jv.JobVacancyID
-                        ORDER BY ap.LastName, ap.FirstName";
+                SELECT
+                    ap.ApplicantID                                  AS 'ID',
+                    CONCAT(ap.FirstName, ' ', ap.LastName)         AS 'Full Name',
+                    ap.ContactNumber                               AS 'Contact Number',
+                    COALESCE(a.CurrentStatus, 'No Application')   AS 'Status',
+                    COALESCE(jv.JobTitle, '—')                    AS 'Position Applied',
+                    COALESCE(CAST(a.ApplicationDate AS CHAR), '—') AS 'Date Applied'
+                FROM Applicants ap
+                LEFT JOIN Applications a  ON ap.ApplicantID = a.ApplicantID
+                LEFT JOIN JobVacancies jv ON a.JobVacancyID = jv.JobVacancyID
+                ORDER BY ap.LastName, ap.FirstName";
 
                     DisplayReport(FetchTable(sql, conn));
                 }
@@ -71,19 +70,20 @@ namespace FINAL_PROJECT.FORMS
                 {
                     conn.Open();
                     string sql = @"
-                        SELECT
-                            a.ApplicationID                            AS 'App ID',
-                            CONCAT(ap.FirstName, ' ', ap.LastName)    AS 'Applicant Name',
-                            ap.Email                                   AS 'Email',
-                            jv.JobTitle                                AS 'Position',
-                            jv.Department                              AS 'Department',
-                            a.CurrentStatus                            AS 'Status',
-                            CAST(a.ApplicationDate AS CHAR)            AS 'Date Applied'
-                        FROM Applications a
-                        INNER JOIN Applicants   ap ON a.ApplicantID  = ap.ApplicantID
-                        INNER JOIN JobVacancies jv ON a.JobVacancyID = jv.JobVacancyID
-                        WHERE a.CurrentStatus IN ('Pending', 'Submitted', 'Under Review')
-                        ORDER BY a.ApplicationDate ASC";
+                SELECT
+                    a.ApplicationID                            AS 'App ID',
+                    CONCAT(ap.FirstName, ' ', ap.LastName)    AS 'Applicant Name',
+                    ap.ContactNumber                          AS 'Contact Number',
+                    jv.JobTitle                               AS 'Position',
+                    d.DepartmentName                          AS 'Department',
+                    a.CurrentStatus                           AS 'Status',
+                    CAST(a.ApplicationDate AS CHAR)           AS 'Date Applied'
+                FROM Applications a
+                INNER JOIN Applicants   ap ON a.ApplicantID  = ap.ApplicantID
+                INNER JOIN JobVacancies jv ON a.JobVacancyID = jv.JobVacancyID
+                INNER JOIN Departments  d  ON jv.DepartmentID = d.DepartmentID
+                WHERE a.CurrentStatus IN ('Pending', 'Submitted', 'Under Review')
+                ORDER BY a.ApplicationDate ASC";
 
                     DisplayReport(FetchTable(sql, conn));
                 }
@@ -139,18 +139,19 @@ namespace FINAL_PROJECT.FORMS
                 {
                     conn.Open();
                     string sql = @"
-                        SELECT
-                            CONCAT(ap.FirstName, ' ', ap.LastName)     AS 'Applicant Name',
-                            ap.Email                                   AS 'Email',
-                            jv.JobTitle                                AS 'Position',
-                            jv.Department                              AS 'Department',
-                            a.CurrentStatus                            AS 'Final Status',
-                            CAST(a.ApplicationDate AS CHAR)            AS 'Application Date'
-                        FROM Applications a
-                        INNER JOIN Applicants   ap ON a.ApplicantID  = ap.ApplicantID
-                        INNER JOIN JobVacancies jv ON a.JobVacancyID = jv.JobVacancyID
-                        WHERE a.CurrentStatus IN ('Accepted', 'Rejected', 'For Final Review')
-                        ORDER BY a.ApplicationDate DESC";
+                SELECT
+                    CONCAT(ap.FirstName, ' ', ap.LastName)     AS 'Applicant Name',
+                    ap.ContactNumber                           AS 'Contact Number',
+                    jv.JobTitle                                AS 'Position',
+                    d.DepartmentName                           AS 'Department',
+                    a.CurrentStatus                            AS 'Final Status',
+                    CAST(a.ApplicationDate AS CHAR)            AS 'Application Date'
+                FROM Applications a
+                INNER JOIN Applicants   ap ON a.ApplicantID   = ap.ApplicantID
+                INNER JOIN JobVacancies jv ON a.JobVacancyID  = jv.JobVacancyID
+                INNER JOIN Departments  d  ON jv.DepartmentID = d.DepartmentID
+                WHERE a.CurrentStatus IN ('Accepted', 'Rejected', 'For Final Review')
+                ORDER BY a.ApplicationDate DESC";
 
                     DisplayReport(FetchTable(sql, conn));
                 }
@@ -171,23 +172,23 @@ namespace FINAL_PROJECT.FORMS
                 {
                     conn.Open();
                     string sql = @"
-                        SELECT
-                            CONCAT(ap.FirstName, ' ', ap.LastName)         AS 'Applicant Name',
-                            ap.Email                                       AS 'Email',
-                            jv.JobTitle                                    AS 'Position',
-                            rt.RequirementName                             AS 'Missing Requirement',
-                            COALESCE(ad.Status, 'Not Submitted')           AS 'Document Status',
-                            a.CurrentStatus                                AS 'Application Status'
-                        FROM Applications a
-                        INNER JOIN Applicants       ap ON a.ApplicantID         = ap.ApplicantID
-                        INNER JOIN JobVacancies     jv ON a.JobVacancyID        = jv.JobVacancyID
-                        CROSS JOIN RequirementTypes rt
-                        LEFT JOIN  ApplicantDocuments ad
-                               ON  ad.ApplicantID       = ap.ApplicantID
-                               AND ad.RequirementTypeID = rt.RequirementTypeID
-                        WHERE (ad.Status IS NULL OR ad.Status = 'Missing')
-                          AND a.CurrentStatus NOT IN ('Rejected', 'Withdrawn')
-                        ORDER BY ap.LastName, rt.RequirementName";
+                SELECT
+                    CONCAT(ap.FirstName, ' ', ap.LastName)         AS 'Applicant Name',
+                    ap.ContactNumber                               AS 'Contact Number',
+                    jv.JobTitle                                    AS 'Position',
+                    rt.RequirementName                             AS 'Missing Requirement',
+                    COALESCE(ad.Status, 'Not Submitted')           AS 'Document Status',
+                    a.CurrentStatus                                AS 'Application Status'
+                FROM Applications a
+                INNER JOIN Applicants       ap ON a.ApplicantID         = ap.ApplicantID
+                INNER JOIN JobVacancies     jv ON a.JobVacancyID        = jv.JobVacancyID
+                CROSS JOIN RequirementTypes rt
+                LEFT JOIN  ApplicantDocuments ad
+                       ON  ad.ApplicantID       = ap.ApplicantID
+                       AND ad.RequirementTypeID = rt.RequirementTypeID
+                WHERE (ad.Status IS NULL OR ad.Status = 'Missing')
+                  AND a.CurrentStatus NOT IN ('Rejected', 'Withdrawn')
+                ORDER BY ap.LastName, rt.RequirementName";
 
                     DisplayReport(FetchTable(sql, conn));
                 }

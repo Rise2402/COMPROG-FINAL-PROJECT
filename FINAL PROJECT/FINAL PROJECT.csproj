@@ -124,6 +124,12 @@
     <Compile Include="FORMS\FormHRApplicantReviewandScreening.Designer.cs">
       <DependentUpon>FormHRApplicantReviewandScreening.cs</DependentUpon>
     </Compile>
+    <Compile Include="FORMS\FormHRFinalDecision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\FormHRFinalDecision.Designer.cs">
+      <DependentUpon>FormHRFinalDecision.cs</DependentUpon>
+    </Compile>
     <Compile Include="FORMS\FormHRInterviewEvaluation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -210,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FORMS\FormHRApplicantReviewandScreening.resx">
       <DependentUpon>FormHRApplicantReviewandScreening.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\FormHRFinalDecision.resx">
+      <DependentUpon>FormHRFinalDecision.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FORMS\FormHRInterviewEvaluation.resx">
       <DependentUpon>FormHRInterviewEvaluation.cs</DependentUpon>

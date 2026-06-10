@@ -261,6 +261,77 @@ namespace FINAL_PROJECT.FORMS
             }
         }
 
+        private void btnViewDocument_Click(object sender, EventArgs e)
+        {
+            if (_selectedApplicantID == 0)
+            {
+                MessageBox.Show("Please select an applicant first.");
+                return;
+            }
+
+            if (lstDocuments.SelectedIndex < 0)
+            {
+                MessageBox.Show("Please select a document from the list first.");
+                return;
+            }
+
+            string selectedDoc = lstDocuments.SelectedItem?.ToString();
+
+            try
+            {
+                using (var conn = DBConnection.GetConnection())
+                {
+                    conn.Open();
+                    string query = @"
+                SELECT ad.FilePath, ad.FileName
+                FROM ApplicantDocuments ad
+                JOIN RequirementTypes rt ON ad.RequirementTypeID = rt.RequirementTypeID
+                WHERE ad.ApplicantID = @ApplicantID
+                  AND rt.RequirementName = @DocName
+                  AND ad.Status = 'Submitted'";
+
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@ApplicantID", _selectedApplicantID);
+                    cmd.Parameters.AddWithValue("@DocName", selectedDoc);
+
+                    MySqlDataReader reader = cmd.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        string filePath = reader["FilePath"].ToString();
+                        reader.Close();
+
+                        if (string.IsNullOrEmpty(filePath))
+                        {
+                            MessageBox.Show("No file path found for this document.");
+                            return;
+                        }
+
+                        if (!System.IO.File.Exists(filePath))
+                        {
+                            MessageBox.Show("File not found at path:\n" + filePath);
+                            return;
+                        }
+
+                        // Open the file with the default associated program
+                        System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                        {
+                            FileName = filePath,
+                            UseShellExecute = true
+                        });
+                    }
+                    else
+                    {
+                        reader.Close();
+                        MessageBox.Show("This document has not been submitted yet.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error opening document: " + ex.Message);
+            }
+        }
+
         private void btnSearch_Click(object sender, EventArgs e)
         {
             LoadApplicants(txtSearch.Text.Trim());

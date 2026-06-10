@@ -62,7 +62,8 @@ namespace FINAL_PROJECT.FORMS
 
         private void button10_Click(object sender, EventArgs e)
         {
-
+            FormHRFinalDecision frm = new FormHRFinalDecision();
+            frm.Show();
         }
 
         private void button8_Click(object sender, EventArgs e)

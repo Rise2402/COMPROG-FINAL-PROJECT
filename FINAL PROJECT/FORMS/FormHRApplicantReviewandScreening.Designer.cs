@@ -257,6 +257,22 @@ namespace FINAL_PROJECT.FORMS
             this.lstDocuments.Size = new System.Drawing.Size(194, 76);
             this.lstDocuments.TabIndex = 18;
             // 
+            // btnViewDocument
+            // 
+            this.btnViewDocument = new System.Windows.Forms.Button();
+            this.btnViewDocument.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnViewDocument.FlatAppearance.BorderSize = 0;
+            this.btnViewDocument.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewDocument.Font = new System.Drawing.Font("Segoe UI", 6.75F, System.Drawing.FontStyle.Bold);
+            this.btnViewDocument.ForeColor = System.Drawing.Color.White;
+            this.btnViewDocument.Location = new System.Drawing.Point(10, 98);
+            this.btnViewDocument.Name = "btnViewDocument";
+            this.btnViewDocument.Size = new System.Drawing.Size(120, 23);
+            this.btnViewDocument.TabIndex = 28;
+            this.btnViewDocument.Text = "View Document";
+            this.btnViewDocument.UseVisualStyleBackColor = false;
+            this.btnViewDocument.Click += new System.EventHandler(this.btnViewDocument_Click);
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -346,11 +362,12 @@ namespace FINAL_PROJECT.FORMS
             this.grpDocuments.Margin = new System.Windows.Forms.Padding(2);
             this.grpDocuments.Name = "grpDocuments";
             this.grpDocuments.Padding = new System.Windows.Forms.Padding(2);
-            this.grpDocuments.Size = new System.Drawing.Size(271, 125);
+            this.grpDocuments.Size = new System.Drawing.Size(271, 138);
             this.grpDocuments.TabIndex = 26;
             this.grpDocuments.TabStop = false;
             this.grpDocuments.Text = "Submitted Documents";
             this.grpDocuments.Enter += new System.EventHandler(this.grpDocuments_Enter);
+            this.grpDocuments.Controls.Add(this.btnViewDocument);
             // 
             // grpScreening
             // 
@@ -445,5 +462,6 @@ namespace FINAL_PROJECT.FORMS
         private GroupBox grpDocuments;
         private GroupBox grpScreening;
         private Label btnexit;
+        private Button btnViewDocument;
     }
 }

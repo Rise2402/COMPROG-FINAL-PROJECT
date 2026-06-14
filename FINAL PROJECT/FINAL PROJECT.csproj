@@ -148,6 +148,12 @@
     <Compile Include="FORMS\FormHRJobVacancyManagement.Designer.cs">
       <DependentUpon>FormHRJobVacancyManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="FORMS\FormHRMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\FormHRMaintenance.Designer.cs">
+      <DependentUpon>FormHRMaintenance.cs</DependentUpon>
+    </Compile>
     <Compile Include="FORMS\FormHRReportsPage.cs">
       <SubType>Form</SubType>
     </Compile>

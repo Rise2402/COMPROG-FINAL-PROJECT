@@ -207,5 +207,10 @@ namespace FINAL_PROJECT.FORMS
         {
             Close();
         }
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                btnLogin_Click(sender, e);
+        }
     }
 }

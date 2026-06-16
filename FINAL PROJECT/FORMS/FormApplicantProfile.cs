@@ -214,5 +214,27 @@ namespace FINAL_PROJECT.FORMS
         {
             btnUpdateProfile_Click(sender, e);
         }
+        private void btnChangePassword_Click(object sender, EventArgs e)
+        {
+            FormChangePassword frm = new FormChangePassword();
+            frm.ShowDialog(this);
+        }
+
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+        private void txtZipCode_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
+
+        private void txtYearsWorked_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
+
     }
 }

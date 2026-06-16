@@ -112,6 +112,12 @@
     <Compile Include="FORMS\FormApplicationPage.Designer.cs">
       <DependentUpon>FormApplicationPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="FORMS\FormChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\FormChangePassword.Designer.cs">
+      <DependentUpon>FormChangePassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="FORMS\FormHRApplicantList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +222,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FORMS\FormApplicationPage.resx">
       <DependentUpon>FormApplicationPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\FormChangePassword.resx">
+      <DependentUpon>FormChangePassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FORMS\FormHRApplicantList.resx">
       <DependentUpon>FormHRApplicantList.cs</DependentUpon>

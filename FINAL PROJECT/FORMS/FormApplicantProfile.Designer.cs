@@ -114,7 +114,7 @@ namespace FINAL_PROJECT.FORMS
             // txtFirstName
             // 
             this.txtFirstName.Location = new System.Drawing.Point(128, 84);
-            this.txtFirstName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtFirstName.Margin = new System.Windows.Forms.Padding(2);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(172, 20);
             this.txtFirstName.TabIndex = 2;
@@ -132,7 +132,7 @@ namespace FINAL_PROJECT.FORMS
             // txtMiddleName
             // 
             this.txtMiddleName.Location = new System.Drawing.Point(128, 119);
-            this.txtMiddleName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMiddleName.Margin = new System.Windows.Forms.Padding(2);
             this.txtMiddleName.Name = "txtMiddleName";
             this.txtMiddleName.Size = new System.Drawing.Size(172, 20);
             this.txtMiddleName.TabIndex = 4;
@@ -150,7 +150,7 @@ namespace FINAL_PROJECT.FORMS
             // txtLastName
             // 
             this.txtLastName.Location = new System.Drawing.Point(128, 154);
-            this.txtLastName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtLastName.Margin = new System.Windows.Forms.Padding(2);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(172, 20);
             this.txtLastName.TabIndex = 6;
@@ -168,7 +168,7 @@ namespace FINAL_PROJECT.FORMS
             // dtpBirthDate
             // 
             this.dtpBirthDate.Location = new System.Drawing.Point(128, 188);
-            this.dtpBirthDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpBirthDate.Margin = new System.Windows.Forms.Padding(2);
             this.dtpBirthDate.Name = "dtpBirthDate";
             this.dtpBirthDate.Size = new System.Drawing.Size(172, 20);
             this.dtpBirthDate.TabIndex = 8;
@@ -190,7 +190,7 @@ namespace FINAL_PROJECT.FORMS
             "Male",
             "Female"});
             this.cmbGender.Location = new System.Drawing.Point(128, 223);
-            this.cmbGender.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbGender.Margin = new System.Windows.Forms.Padding(2);
             this.cmbGender.Name = "cmbGender";
             this.cmbGender.Size = new System.Drawing.Size(172, 21);
             this.cmbGender.TabIndex = 10;
@@ -213,7 +213,7 @@ namespace FINAL_PROJECT.FORMS
             "Widowed",
             "Separated"});
             this.cmbCivilStatus.Location = new System.Drawing.Point(128, 258);
-            this.cmbCivilStatus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbCivilStatus.Margin = new System.Windows.Forms.Padding(2);
             this.cmbCivilStatus.Name = "cmbCivilStatus";
             this.cmbCivilStatus.Size = new System.Drawing.Size(172, 21);
             this.cmbCivilStatus.TabIndex = 12;
@@ -231,7 +231,7 @@ namespace FINAL_PROJECT.FORMS
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(128, 292);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(215, 20);
             this.txtEmail.TabIndex = 14;
@@ -249,7 +249,7 @@ namespace FINAL_PROJECT.FORMS
             // txtContact
             // 
             this.txtContact.Location = new System.Drawing.Point(128, 327);
-            this.txtContact.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtContact.Margin = new System.Windows.Forms.Padding(2);
             this.txtContact.Name = "txtContact";
             this.txtContact.Size = new System.Drawing.Size(215, 20);
             this.txtContact.TabIndex = 16;
@@ -270,7 +270,7 @@ namespace FINAL_PROJECT.FORMS
             // txtSkills
             // 
             this.txtSkills.Location = new System.Drawing.Point(26, 780);
-            this.txtSkills.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSkills.Margin = new System.Windows.Forms.Padding(2);
             this.txtSkills.Multiline = true;
             this.txtSkills.Name = "txtSkills";
             this.txtSkills.Size = new System.Drawing.Size(318, 70);
@@ -281,7 +281,7 @@ namespace FINAL_PROJECT.FORMS
             this.btnSaveProfile.BackColor = System.Drawing.Color.Navy;
             this.btnSaveProfile.ForeColor = System.Drawing.Color.White;
             this.btnSaveProfile.Location = new System.Drawing.Point(128, 1109);
-            this.btnSaveProfile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSaveProfile.Margin = new System.Windows.Forms.Padding(2);
             this.btnSaveProfile.Name = "btnSaveProfile";
             this.btnSaveProfile.Size = new System.Drawing.Size(103, 30);
             this.btnSaveProfile.TabIndex = 46;
@@ -294,7 +294,7 @@ namespace FINAL_PROJECT.FORMS
             this.btnUpdateProfile.BackColor = System.Drawing.Color.White;
             this.btnUpdateProfile.ForeColor = System.Drawing.Color.Navy;
             this.btnUpdateProfile.Location = new System.Drawing.Point(248, 1109);
-            this.btnUpdateProfile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnUpdateProfile.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdateProfile.Name = "btnUpdateProfile";
             this.btnUpdateProfile.Size = new System.Drawing.Size(103, 30);
             this.btnUpdateProfile.TabIndex = 47;
@@ -364,12 +364,11 @@ namespace FINAL_PROJECT.FORMS
             this.lblZipCode.Size = new System.Drawing.Size(55, 13);
             this.lblZipCode.TabIndex = 26;
             this.lblZipCode.Text = "ZIP Code:";
-            this.txtZipCode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtZipCode_KeyPress);
             // 
             // txtStreet
             // 
             this.txtStreet.Location = new System.Drawing.Point(128, 405);
-            this.txtStreet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtStreet.Margin = new System.Windows.Forms.Padding(2);
             this.txtStreet.Name = "txtStreet";
             this.txtStreet.Size = new System.Drawing.Size(215, 20);
             this.txtStreet.TabIndex = 19;
@@ -377,7 +376,7 @@ namespace FINAL_PROJECT.FORMS
             // txtBarangay
             // 
             this.txtBarangay.Location = new System.Drawing.Point(128, 440);
-            this.txtBarangay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBarangay.Margin = new System.Windows.Forms.Padding(2);
             this.txtBarangay.Name = "txtBarangay";
             this.txtBarangay.Size = new System.Drawing.Size(215, 20);
             this.txtBarangay.TabIndex = 21;
@@ -385,7 +384,7 @@ namespace FINAL_PROJECT.FORMS
             // txtCity
             // 
             this.txtCity.Location = new System.Drawing.Point(128, 474);
-            this.txtCity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCity.Margin = new System.Windows.Forms.Padding(2);
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(215, 20);
             this.txtCity.TabIndex = 23;
@@ -393,10 +392,18 @@ namespace FINAL_PROJECT.FORMS
             // txtProvince
             // 
             this.txtProvince.Location = new System.Drawing.Point(128, 509);
-            this.txtProvince.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProvince.Margin = new System.Windows.Forms.Padding(2);
             this.txtProvince.Name = "txtProvince";
             this.txtProvince.Size = new System.Drawing.Size(215, 20);
             this.txtProvince.TabIndex = 25;
+            // 
+            // txtZipCode
+            // 
+            this.txtZipCode.Location = new System.Drawing.Point(0, 0);
+            this.txtZipCode.Name = "txtZipCode";
+            this.txtZipCode.Size = new System.Drawing.Size(100, 20);
+            this.txtZipCode.TabIndex = 50;
+            this.txtZipCode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtZipCode_KeyPress);
             // 
             // lblEducationHeader
             // 
@@ -444,7 +451,7 @@ namespace FINAL_PROJECT.FORMS
             // txtSchool
             // 
             this.txtSchool.Location = new System.Drawing.Point(128, 630);
-            this.txtSchool.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSchool.Margin = new System.Windows.Forms.Padding(2);
             this.txtSchool.Name = "txtSchool";
             this.txtSchool.Size = new System.Drawing.Size(215, 20);
             this.txtSchool.TabIndex = 30;
@@ -452,7 +459,7 @@ namespace FINAL_PROJECT.FORMS
             // txtCourse
             // 
             this.txtCourse.Location = new System.Drawing.Point(128, 665);
-            this.txtCourse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCourse.Margin = new System.Windows.Forms.Padding(2);
             this.txtCourse.Name = "txtCourse";
             this.txtCourse.Size = new System.Drawing.Size(215, 20);
             this.txtCourse.TabIndex = 32;
@@ -460,11 +467,10 @@ namespace FINAL_PROJECT.FORMS
             // txtYearGraduated
             // 
             this.txtYearGraduated.Location = new System.Drawing.Point(128, 700);
-            this.txtYearGraduated.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtYearGraduated.Margin = new System.Windows.Forms.Padding(2);
             this.txtYearGraduated.Name = "txtYearGraduated";
             this.txtYearGraduated.Size = new System.Drawing.Size(104, 20);
             this.txtYearGraduated.TabIndex = 34;
-            this.txtYearsWorked.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtYearsWorked_KeyPress);
             // 
             // lblWorkHeader
             // 
@@ -522,7 +528,7 @@ namespace FINAL_PROJECT.FORMS
             // txtCompany
             // 
             this.txtCompany.Location = new System.Drawing.Point(128, 908);
-            this.txtCompany.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCompany.Margin = new System.Windows.Forms.Padding(2);
             this.txtCompany.Name = "txtCompany";
             this.txtCompany.Size = new System.Drawing.Size(215, 20);
             this.txtCompany.TabIndex = 39;
@@ -530,7 +536,7 @@ namespace FINAL_PROJECT.FORMS
             // txtPosition
             // 
             this.txtPosition.Location = new System.Drawing.Point(128, 942);
-            this.txtPosition.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPosition.Margin = new System.Windows.Forms.Padding(2);
             this.txtPosition.Name = "txtPosition";
             this.txtPosition.Size = new System.Drawing.Size(215, 20);
             this.txtPosition.TabIndex = 41;
@@ -538,15 +544,16 @@ namespace FINAL_PROJECT.FORMS
             // txtYearsWorked
             // 
             this.txtYearsWorked.Location = new System.Drawing.Point(128, 977);
-            this.txtYearsWorked.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtYearsWorked.Margin = new System.Windows.Forms.Padding(2);
             this.txtYearsWorked.Name = "txtYearsWorked";
             this.txtYearsWorked.Size = new System.Drawing.Size(104, 20);
             this.txtYearsWorked.TabIndex = 43;
+            this.txtYearsWorked.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtYearsWorked_KeyPress);
             // 
             // txtDescription
             // 
             this.txtDescription.Location = new System.Drawing.Point(128, 1012);
-            this.txtDescription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDescription.Margin = new System.Windows.Forms.Padding(2);
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(258, 70);
@@ -557,7 +564,7 @@ namespace FINAL_PROJECT.FORMS
             this.btnChangePassword.BackColor = System.Drawing.Color.White;
             this.btnChangePassword.ForeColor = System.Drawing.Color.Navy;
             this.btnChangePassword.Location = new System.Drawing.Point(182, 1143);
-            this.btnChangePassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnChangePassword.Margin = new System.Windows.Forms.Padding(2);
             this.btnChangePassword.Name = "btnChangePassword";
             this.btnChangePassword.Size = new System.Drawing.Size(112, 30);
             this.btnChangePassword.TabIndex = 48;
@@ -584,7 +591,7 @@ namespace FINAL_PROJECT.FORMS
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(785, 874);
+            this.ClientSize = new System.Drawing.Size(774, 646);
             this.Controls.Add(this.btnexit);
             this.Controls.Add(this.btnChangePassword);
             this.Controls.Add(this.lblTitle);
@@ -636,7 +643,7 @@ namespace FINAL_PROJECT.FORMS
             this.Controls.Add(this.btnSaveProfile);
             this.Controls.Add(this.btnUpdateProfile);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormApplicantProfile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Applicant Profile";

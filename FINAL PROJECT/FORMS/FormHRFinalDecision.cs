@@ -19,7 +19,18 @@ namespace FINAL_PROJECT.FORMS
 
         private void FormHRFinalDecision_Load(object sender, EventArgs e)
         {
-            // Wire AFTER InitializeComponent so it doesn't fire during setup
+            if (Session.RoleID == 2)
+            {
+                cmbDecision.Enabled = false;
+                rtbRemarks.Enabled = false;
+                btnSaveDecision.Enabled = false;
+                btnSaveDecision.BackColor = System.Drawing.Color.Gray;
+
+                // Show a notice label
+                MessageBox.Show("You are logged in as HR Staff. You can view applicants but cannot make final hiring decisions.",
+                    "View Only Mode", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
             dgvApplicants.SelectionChanged += (s, ev) =>
             {
                 if (_isLoading) return;
@@ -133,6 +144,13 @@ namespace FINAL_PROJECT.FORMS
         // ── SAVE DECISION ─────────────────────────────────────────────
         private void btnSaveDecision_Click(object sender, EventArgs e)
         {
+            if (Session.RoleID == 2)
+            {
+                MessageBox.Show("Access Denied. Only Admin or HR Manager can make final hiring decisions.",
+                    "Unauthorized", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             if (_selectedApplicationID == 0)
             {
                 MessageBox.Show("Please select an applicant first.");

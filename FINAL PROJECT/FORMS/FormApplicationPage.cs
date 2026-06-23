@@ -289,6 +289,23 @@ namespace FINAL_PROJECT.FORMS
         {
             if (_applicationId == -1) return;
 
+            if (lblStatus.Text == "Submitted" ||
+        lblStatus.Text == "Under Review" ||
+        lblStatus.Text == "Shortlisted" ||
+        lblStatus.Text == "For Interview" ||
+        lblStatus.Text == "For Assessment" ||
+        lblStatus.Text == "For Final Review" ||
+        lblStatus.Text == "Accepted")
+            {
+                MessageBox.Show(
+                    "This application has already been submitted and is being processed.",
+                    "Cannot Submit",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+
+                return;
+            }
+
             var confirm = MessageBox.Show(
                 "Are you sure you want to submit your application?\n" +
                 "You can still edit it until HR starts reviewing.",
